@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nsd-tools.maven.plugins</groupId>
 	<artifactId>simple-release-maven-plugin</artifactId>
-	<version>1.1</version>
+	<version>1.0</version>
 	<name>Simple Release Plugin</name>
 	<url>http://www.springsource.org/spring-integration</url>
 	<packaging>maven-plugin</packaging>
