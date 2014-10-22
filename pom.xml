@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.nsd-tools.maven.plugins</groupId>
 	<artifactId>simple-release-maven-plugin</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>Simple Release Plugin</name>
 	<url>http://www.springsource.org/spring-integration</url>
 	<description>Maven plugin for simple releasing.It only updates automatically pom version as be needed.</description>
@@ -19,7 +19,7 @@
 		<url>https://github.com/nsd-tools/simple-release-maven-plugin</url>
 		<connection>scm:git:https://github.com/nsd-tools/simple-release-maven-plugin.git</connection>
 		<developerConnection>scm:git:https://github.com/nsd-tools/simple-release-maven-plugin.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>simple-release-maven-plugin-1.0</tag>
   </scm>
 
 	<licenses>
