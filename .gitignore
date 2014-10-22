@@ -16,3 +16,4 @@ hs_err_pid*
 /.classpath
 /simple-release-maven-plugin PREPARE-RELEASE.launch
 /simple-release-maven-plugin ROLLBACK.launch
+/simple-release-maven-plugin SNAPSHOT-DEPLOY.launch
