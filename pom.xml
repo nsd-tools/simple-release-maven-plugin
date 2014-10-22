@@ -8,7 +8,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<name>Simple Release Plugin</name>
 	<url>http://www.springsource.org/spring-integration</url>
-	<description>Maven plugin for simple releasing. It only updates automatically pom version as be needed.</description>
+	<description>Maven plugin for simple releasing.It only updates automatically pom version as be needed.</description>
 	<packaging>maven-plugin</packaging>
 
 	<issueManagement>
