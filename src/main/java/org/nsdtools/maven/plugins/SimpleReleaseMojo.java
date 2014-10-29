@@ -19,6 +19,9 @@ public class SimpleReleaseMojo extends AbstractMojo {
 	@Parameter(readonly = true, defaultValue = "${project}")
 	private MavenProject project;
 
+	@Parameter(property = "doRelease", required = true)
+	private boolean doRelease;
+
 	public void execute() throws MojoExecutionException {
 		String version = project.getVersion();
 		String newVersion = null;
@@ -31,11 +34,16 @@ public class SimpleReleaseMojo extends AbstractMojo {
 		}
 
 		getLog().info("current version::: " + version);
+
+		if (info.isSnapshot() && !doRelease)
+			throw new MojoExecutionException("Version is already SNAPSHOT");
+		if (!info.isSnapshot() && doRelease)
+			throw new MojoExecutionException("Version is already RELEASE");
+
 		if (info.isSnapshot())
 		{
 			getLog().info("is Snapshot");
 			newVersion = info.getReleaseVersionString();
-
 		}
 		else
 			newVersion = info.getNextVersion().getSnapshotVersionString();
